@@ -1,0 +1,18 @@
+projekt: internetowa biblioteka
+
+1.zaprojektowanie podstawowego wyglądu aplikacji
+2.stworzenie bazy danych biblioteki
+3.zaprojektowanie systemu logowania
+4.połączenie bazy danych z aplikacją
+5.dodawanie książek do wypożyczenia
+6.usuwanie książek do wypożyczenia
+7.filtrowanie książek
+8.sortowanie książek
+9.dodawanie książek do polubionych
+10.próba zbudowania prostego UI (nie obowiązkowe)
+11.wprowadzić conajmniej 2 mikroserwisy komunikujące sie ze sobą
+12.stworzenie skryptu uruchamiającego aplikację
+13.dodanie do aplikacji "wymagań formalnych" które na wcześniejszych etapach nie zostały dodane
+14.ostateczne testowanie aplikacji
+15.sporządzenie opisu aplikacji
+16.zakończenie pracy nad aplikacją 
