@@ -17,7 +17,7 @@ public class BookController {
             return 1;
         }*/
 
-        @GetMapping("/")
+        @GetMapping("")
         public List<Book> getAll(){
             return bookRepository.getAll();
         }
@@ -27,10 +27,24 @@ public class BookController {
             return bookRepository.getById(id);
         }
 
-        @PostMapping("/")
+        @PostMapping("")
         public int add(@RequestBody List<Book> books){
             return bookRepository.save(books);
         }
 
+        @PutMapping("/{id}")
+        public int update(@PathVariable("id") int id, @RequestBody Book updatedBook){
+            Book book = bookRepository.getById(id);
 
+            if (book !=null){
+                book.setName(updatedBook.getName());
+                book.setRating(updatedBook.getRating());
+
+                bookRepository.update(book);
+
+                return 1;
+            } else{
+                return -1;
+            }
+        }
 }

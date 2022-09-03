@@ -31,5 +31,11 @@ public class BookRepository {
 
         return 1;
     }
+
+    public int update(Book book){
+        return jdbcTemplate.update("UPDATE Book SET name=?, rating=? WHERE id=?",
+                book.getName(), book.getRating(), book.getId());
+    }
+
 }
 
