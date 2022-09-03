@@ -47,4 +47,12 @@ public class BookController {
                 return -1;
             }
         }
+
+        @DeleteMapping("/{id}")
+        public int delete(@PathVariable("id") int id) {
+            return bookRepository.delete(id);
+
+        }
+
+
 }

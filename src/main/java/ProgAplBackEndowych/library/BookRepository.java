@@ -37,5 +37,10 @@ public class BookRepository {
                 book.getName(), book.getRating(), book.getId());
     }
 
+    public int delete(int id){
+        return jdbcTemplate.update("DELETE FROM Book WHERE id=?", id);
+    }
+
+
 }
 
