@@ -1,12 +1,13 @@
 package ProgAplBackEndowych.library;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
-@RequestMapping("/books")
+//@RequestMapping("/books")
 public class BookController {
 
         @Autowired
@@ -17,22 +18,30 @@ public class BookController {
             return 1;
         }*/
 
-        @GetMapping("")
+
+        @GetMapping("/home")
+        public String home() {
+            return glowna.html;
+        }
+
+
+
+        @GetMapping("/books")
         public List<Book> getAll(){
             return bookRepository.getAll();
         }
 
-        @GetMapping("/{id}")
+        @GetMapping("/books/{id}")
         public Book getById(@PathVariable("id") int id){
             return bookRepository.getById(id);
         }
 
-        @PostMapping("")
+        @PostMapping("/books")
         public int add(@RequestBody List<Book> books){
             return bookRepository.save(books);
         }
 
-        @PutMapping("/{id}")
+        @PutMapping("/books/{id}")
         public int update(@PathVariable("id") int id, @RequestBody Book updatedBook){
             Book book = bookRepository.getById(id);
 
@@ -48,7 +57,7 @@ public class BookController {
             }
         }
 
-        @DeleteMapping("/{id}")
+        @DeleteMapping("/books/{id}")
         public int delete(@PathVariable("id") int id) {
             return bookRepository.delete(id);
 
