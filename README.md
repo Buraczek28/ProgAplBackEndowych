@@ -14,6 +14,6 @@ tu sie jara ztenteguje xd
 ```
 
 
-Jeśli używasz IntelliJ IDEA możesz też otowrzyć aplikację w edytorze przez jego UI
+Jeśli używasz IntelliJ IDEA możesz też otowrzyć aplikację w edytorze przez jego UI (library/src/main/java/ProgAplBackEndowych/LibraryApplication)
 Następnie w pzeglądarce wpisujemy
 http://localhost:8080/
