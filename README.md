@@ -1,28 +1,19 @@
-# Aplikacja Library
+# Aplikacja "Library"
 
-It's a simple app when you can create your own car part and add it into store. You can create your own account and logged in. Store give you chance to find discounts. From UI you can add products to basket and change their quaintity.
+Aplikacja Library jest stworzona dla osób zarządzających bazą książek interetowej biblioteki
+Oferuje możliwość zarejestrowania nowego konta, oraz system logowania, 
+ponadto możemy operować na bazie książek (poprzez wyświetlenie wybranych tytułów po ich id, wyświetlanie wszytkich książek, ich dodawanie, usuwanie i edycję)
 
-# How to run frontend app
+# Jak uruchomić aplikację
 
 
-To start app you have to had npm. Afterthat you need to use command:
+------------null for now------------:
 
 ```sh
-cd ./frontend/car-stope-app
-npm i
-npm start
+tu sie jara ztenteguje xd
 ```
 
 
-# How to run backend app
-
-
-
-To start app you have to had npm. Afterthat you need to use command:
-
-```sh
-cd ./backend
-```
-
-
-If you are using IntelliJ IDEA you can start your app on the UI side.
+Jeśli używasz IntelliJ IDEA możesz też otowrzyć aplikację w edytorze przez jego UI
+Następnie w pzeglądarce wpisujemy
+http://localhost:8080/
