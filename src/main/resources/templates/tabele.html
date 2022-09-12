@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<style>
+    table,td,th,tr{
+    border:1px solid black;
+    }
+    *{
+    background:lightgray;
+    }
+</style>
+<h1>Baza książek </h1>
+<table>
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nazwa ksiazki</th>
+        <th>Ocena</th>
+
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="Book: ${booksKey}">
+        <td th:text="${Book.id}" />
+        <td th:text="${Book.Name}" />
+        <td th:text="${Book.Rating}" />
+    </tr>
+    </tbody>
+</table><br>
+
+
+</body>
+</html>
