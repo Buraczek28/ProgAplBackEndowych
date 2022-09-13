@@ -13,11 +13,11 @@ Operacje te wykonujemy używając programu Postman
 2. uruchamiamy program MySql workbench (tu stworzona jest baza)   
 3. uruchamiamy program Postman (w celu edytowania tabel)
 
-```sh
-tu sie jara ztenteguje xd
-```
 
-
-Jeśli używasz IntelliJ IDEA możesz też otowrzyć aplikację w edytorze przez jego UI (library/src/main/java/ProgAplBackEndowych/LibraryApplication)
-Następnie w pzeglądarce wpisujemy
+Jeśli używasz IntelliJ IDEA możesz też otowrzyć aplikację w edytorze przez jego UI    
+(library/src/main/java/ProgAplBackEndowych/LibraryApplication)   
+Następnie w pzeglądarce wpisujemy   
 http://localhost:8080/
+
+
+
