@@ -1,5 +1,6 @@
 package ProgAplBackEndowych.library.controller;
 
+import ProgAplBackEndowych.library.Audiobook.AudiobookRepository;
 import ProgAplBackEndowych.library.BookRepository;
 import ProgAplBackEndowych.library.model.UsersModel;
 import ProgAplBackEndowych.library.service.UsersService;
@@ -19,6 +20,9 @@ public class UsersController {
 
     @Autowired
     BookRepository bookRepository;
+
+    @Autowired
+    AudiobookRepository audiobookRepository;
 
     public UsersController(UsersService usersService) {
         this.usersService = usersService;
@@ -69,7 +73,7 @@ public class UsersController {
     public ModelAndView dataShow2() {
 
         ModelAndView mv = new ModelAndView("Audiobook");
-        mv.addObject("booksKey2", bookRepository.getAll());
+        mv.addObject("booksKey2", audiobookRepository.getAll());
         mv.setViewName("tabele2");
 
         return mv;
